@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: RestockHub API
+  version: 0.1.0
+paths:
+  /api/products/:
+    get: { summary: List products, responses: { '200': { description: OK } } }
+    post: { summary: Create product, responses: { '201': { description: Created } } }
+  /api/orders/:
+    get: { summary: List orders, responses: { '200': { description: OK } } }
+    post: { summary: Create order with items, responses: { '201': { description: Created } } }
+  /api/offers/:
+    get: { summary: List offers, responses: { '200': { description: OK } } }
+    post: { summary: Create offer for an order, responses: { '201': { description: Created } } }
+  /api/preorders/:
+    get: { summary: List preorders, responses: { '200': { description: OK } } }
+    post: { summary: Create preorder (reserved-only MVP), responses: { '201': { description: Created } } }
+  /api/calendar/:
+    get: { summary: List calendar events, responses: { '200': { description: OK } } }
+    post: { summary: Create event, responses: { '201': { description: Created } } }
+  /api/reviews/:
+    get: { summary: List reviews, responses: { '200': { description: OK } } }
+    post: { summary: Create review, responses: { '201': { description: Created } } }
+  /api/waitlist/:
+    get: { summary: List waitlist entries, responses: { '200': { description: OK } } }
+    post: { summary: Add to waitlist (with desired quantity), responses: { '201': { description: Created } } }
+  /api/favorites/:
+    get: { summary: List favorite partners, responses: { '200': { description: OK } } }
+    post: { summary: Add favorite partner, responses: { '201': { description: Created } } }
