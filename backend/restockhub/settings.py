@@ -11,6 +11,9 @@ DEBUG = os.getenv("DEBUG", "1") == "1"
 ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
+    
+    "rest_framework",
+    "core",   # ← вот это обязательно
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
